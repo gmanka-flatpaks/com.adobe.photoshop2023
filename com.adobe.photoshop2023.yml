@@ -1,0 +1,18 @@
+id: com.adobe.photoshop2023
+command: photoshop.sh
+runtime: org.freedesktop.Platform
+base: org.winehq.Wine
+base-version: stable-24.08
+runtime-version: '24.08'
+sdk: org.freedesktop.Sdk
+finish-args:
+  - --socket=pulseaudio
+  - --socket=x11
+  - --share=ipc
+  - --device=dri
+modules:
+  - modules/photoshop2023/photoshop2023_extra_data.yml
+  - modules/winedeps/winetricks.yml
+  - modules/winedeps/vkd3d.yml
+  - modules/launcher/launcher.yml
+

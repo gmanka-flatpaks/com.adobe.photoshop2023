@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Photoshop 2023
+GenericName=Photoshop is a professional image editing software used for photo retouching, compositing, and digital painting.
+Comment=Photoshop is a professional image editing software offering powerful tools for editing, compositing, and creating digital art.
+Exec=/app/bin/photoshop.sh
+Icon=com.adobe.photoshop2023
+Categories=Graphics;
+StartupWMClass=Photoshop
+

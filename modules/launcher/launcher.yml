@@ -1,0 +1,14 @@
+name: launcher
+buildsystem: simple
+sources:
+  - type: file
+    path: com.adobe.photoshop2023.desktop
+  - type: file
+    path: com.adobe.photoshop2023.svg
+  - type: file
+    path: photoshop.sh
+build-commands:
+  - install -Dm644 ${FLATPAK_ID}.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
+  - install -Dm755 ${FLATPAK_ID}.desktop /app/share/applications/${FLATPAK_ID}.desktop
+  - install -Dm755 photoshop.sh /app/bin/photoshop.sh
+

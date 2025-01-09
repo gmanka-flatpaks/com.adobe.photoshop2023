@@ -1,0 +1,18 @@
+name: photoshop
+buildsystem: simple
+sources:
+  - type: file
+    path: apply_extra
+  - type: extra-data
+    filename: Adobe.zip
+    url: https://github.com/gmanka-flatpaks/com.adobe.photoshop2023/releases/download/photoshop2023/Adobe.zip
+    sha256: eb52e9e634f8aa0647374124dd26cdb1d2f4e65c3bf004f23e6d4cad452fdf6a
+    size: 33228584
+  - type: extra-data
+    filename: photoshop2023.zip
+    url: https://github.com/gmanka-flatpaks/com.adobe.photoshop2023/releases/download/photoshop2023/photoshop2023.zip
+    sha256: 57587ae8973d0cba7bfdd93aca80c6f9dd9fb6d902b7ded39dc7bff664f60ca4
+    size: 1982903741
+build-commands:
+  - install -Dm755 apply_extra /app/bin/apply_extra
+

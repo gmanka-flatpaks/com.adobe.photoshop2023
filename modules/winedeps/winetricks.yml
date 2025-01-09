@@ -1,0 +1,9 @@
+name: winetricks
+buildsystem: simple
+sources:
+  - type: git
+    url: https://github.com/Winetricks/winetricks
+    tag: '20250102'
+build-commands:
+  - install -Dm755 src/winetricks /app/bin/winetricks
+

@@ -1,0 +1,15 @@
+--- a/vkd3d/setup_vkd3d_proton.sh     2024-12-13 17:53:55.000000000 +0400
++++ b/vkd3d/setup_vkd3d_proton.sh     2025-01-09 17:49:09.508651691 +0400
+@@ -48,9 +48,9 @@
+ # wine gecko and mono
+ export WINEDLLOVERRIDES="mscoree,mshtml="
+
+-wine="wine"
++wine="wine64"
+ wine64="wine64"
+-wineboot="wineboot"
++wineboot="wine64 wineboot"
+
+ # $PATH is the way for user to control where wine is located (including custom Wine versions).
+ # Pure 64-bit Wine (non Wow64) requries skipping 32-bit steps.
+
