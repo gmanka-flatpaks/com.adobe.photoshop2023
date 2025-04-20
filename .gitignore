@@ -1,4 +1,7 @@
 .flatpak-builder
-build
 repo
+build
+photoshop2023.flatpak
+photoshop2023.zip
+commonfiles_adobe_2023.zip
 

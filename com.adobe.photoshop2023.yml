@@ -6,8 +6,8 @@ base-version: stable-24.08
 runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 finish-args:
-  - --socket=pulseaudio
   - --socket=x11
+  - --socket=pulseaudio
   - --share=ipc
   - --device=dri
 modules:

@@ -1,8 +1,10 @@
+# downloading photoshop archive during the build process
+
 name: photoshop
 buildsystem: simple
 sources:
   - type: archive
-    url: https://github.com/gmanka-flatpaks/com.adobe.photoshop2023/releases/download/photoshop2023/Adobe.zip
+    url: https://github.com/gmanka-flatpaks/com.adobe.photoshop2023/releases/download/photoshop2023/commonfiles_adobe_2023.zip
     sha256: eb52e9e634f8aa0647374124dd26cdb1d2f4e65c3bf004f23e6d4cad452fdf6a
     dest: Adobe
     strip-components: 0

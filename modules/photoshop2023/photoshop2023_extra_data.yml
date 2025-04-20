@@ -1,11 +1,13 @@
+# downloading photoshop archive during the installation process as extra data, and will not download it while building
+
 name: photoshop
 buildsystem: simple
 sources:
   - type: file
     path: apply_extra
   - type: extra-data
-    filename: Adobe.zip
-    url: https://github.com/gmanka-flatpaks/com.adobe.photoshop2023/releases/download/photoshop2023/Adobe.zip
+    filename: commonfiles_adobe_2023.zip
+    url: https://github.com/gmanka-flatpaks/com.adobe.photoshop2023/releases/download/photoshop2023/commonfiles_adobe_2023.zip
     sha256: eb52e9e634f8aa0647374124dd26cdb1d2f4e65c3bf004f23e6d4cad452fdf6a
     size: 33228584
   - type: extra-data

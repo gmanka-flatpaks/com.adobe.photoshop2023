@@ -1,6 +1,6 @@
 mkdir Adobe
 mkdir photoshop2023
-unzip Adobe.zip -d Adobe
+unzip commonfiles_adobe_2023.zip -d Adobe
 unzip photoshop2023.zip -d photoshop2023
 rm photoshop2023.zip
 rm Adobe.zip
