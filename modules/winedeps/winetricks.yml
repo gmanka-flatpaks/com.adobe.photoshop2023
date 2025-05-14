@@ -4,6 +4,10 @@ sources:
   - type: git
     url: https://github.com/Winetricks/winetricks
     tag: '20250102'
+    commit: e20b2f6f80d175f96208f51800130db7459dd28c
+    x-checker-data:
+      type: git
+      tag-pattern: ^([0-9]{8})$
 build-commands:
   - install -Dm755 src/winetricks /app/bin/winetricks
 
