@@ -1,0 +1,33 @@
+# downloading photoshop archive during the build process
+
+name: photoshop
+buildsystem: simple
+sources:
+  - type: archive
+    url: https://github.com/gmanka-flatpaks/com.adobe.photoshop2023/releases/download/photoshop2023/commonfiles_adobe_2023.zip
+    mirror-urls:
+      - https://github.com/gmanka-flatpaks/photoshop-binaries/raw/refs/heads/main/photoshop2023.zip
+      - https://web.archive.org/web/*/https://github.com/gmanka-flatpaks/com.adobe.photoshop2023/releases/download/photoshop2023/photoshop2023.zip
+      # https://github.com/gmanka-flatpaks/photoshop-binaries
+      # https://nnmclub.to/forum/viewtopic.php?t=1627843
+      # magnet:?xt=urn:btih:890ADBC7418CA22AD185613D128B4BB37D6C771C
+    sha256: eb52e9e634f8aa0647374124dd26cdb1d2f4e65c3bf004f23e6d4cad452fdf6a
+    dest: Adobe
+    strip-components: 0
+  - type: archive
+    url: https://github.com/gmanka-flatpaks/com.adobe.photoshop2023/releases/download/photoshop2023/photoshop2023.zip
+    mirror-urls:
+      - https://github.com/gmanka-flatpaks/photoshop-binaries/raw/refs/heads/main/commonfiles_adobe_2023.zip
+      - https://web.archive.org/web/*/https://github.com/gmanka-flatpaks/com.adobe.photoshop2023/releases/download/photoshop2023/commonfiles_adobe_2023.zip
+      # https://github.com/gmanka-flatpaks/photoshop-binaries
+      # https://nnmclub.to/forum/viewtopic.php?t=1627843
+      # magnet:?xt=urn:btih:890ADBC7418CA22AD185613D128B4BB37D6C771C
+    sha256: 57587ae8973d0cba7bfdd93aca80c6f9dd9fb6d902b7ded39dc7bff664f60ca4
+    dest: photoshop2023
+    strip-components: 0
+build-commands:
+  - ls Adobe
+  - cp -r Adobe /app/Adobe
+  - ls /app/Adobe
+  - cp -r photoshop2023 /app/photoshop2023
+
