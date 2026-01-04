@@ -2,8 +2,8 @@ id: com.adobe.photoshop2023
 command: photoshop.sh
 runtime: org.freedesktop.Platform
 base: org.winehq.Wine
-base-version: stable-24.08
-runtime-version: '24.08'
+base-version: stable-25.08
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 finish-args:
   - --socket=x11
