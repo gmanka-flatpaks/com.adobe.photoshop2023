@@ -2,15 +2,12 @@ name: vkd3d
 buildsystem: simple
 sources:
   - type: archive
-    url: https://github.com/HansKristian-Work/vkd3d-proton/releases/download/v2.14.1/vkd3d-proton-2.14.1.tar.zst
-    sha256: ac70ccfe01d610b51ca67a0a44e4f24f5da29c665facc0c2faf47e0818d23168
+    url: https://github.com/HansKristian-Work/vkd3d-proton/releases/download/v3.0b/vkd3d-proton-3.0b.tar.zst
+    sha256: a21f5e511063b7fe80123910f1b54f75541f2edfef7106c461293f08982e9ad2
     dest: vkd3d
     x-checker-data:
       type: anitya
       project-id: 235421
       url-template: https://github.com/HansKristian-Work/vkd3d-proton/releases/download/v$version/vkd3d-proton-$version.tar.zst
-  - type: patch
-    path: wine64.patch
 build-commands:
   - cp -r vkd3d /app
-
