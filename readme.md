@@ -13,7 +13,7 @@ flatpak install gmanka com.adobe.photoshop2023
 ```shell
 git clone https://github.com/gmanka-flatpaks/com.adobe.photoshop2023
 cd com.adobe.photoshop2023
-sed -i 's|photoshop2023_extra_data.yml|photoshop2023_local.yml|' com.adobe.photoshop2023.yml
+sed -i 's|photoshop2023_build_download.yml|photoshop2023_local.yml|' com.adobe.photoshop2023.yml
 curl https://github.com/gmanka-flatpaks/com.adobe.photoshop2023/releases/download/photoshop2023/photoshop2023.zip -Lo modules/photoshop2023/photoshop2023.zip
 curl https://github.com/gmanka-flatpaks/com.adobe.photoshop2023/releases/download/photoshop2023/commonfiles_adobe_2023.zip -Lo modules/photoshop2023/commonfiles_adobe_2023.zip
 flatpak --user remote-add flathub https://dl.flathub.org/repo/flathub.flatpakrepo

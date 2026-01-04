@@ -11,7 +11,7 @@ finish-args:
   - --share=ipc
   - --device=dri
 modules:
-  - modules/photoshop2023/photoshop2023_extra_data.yml
+  - modules/photoshop2023/photoshop2023_build_download.yml
   - modules/winedeps/winetricks.yml
   - modules/winedeps/vkd3d.yml
   - modules/launcher/launcher.yml
