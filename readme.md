@@ -4,7 +4,7 @@
 
 ```shell
 sudo flatpak remote-add flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-sudo flatpak remote-add gmanka https://gmanka-flatpaks.github.io/gmanka.flatpakrepo
+sudo flatpak remote-add gmanka oci+https://gmanka-flatpaks.github.io
 flatpak install gmanka com.adobe.photoshop2023
 ```
 
