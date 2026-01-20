@@ -50,6 +50,6 @@ flatpak override --user --env=vd=1920x1080 com.adobe.photoshop2023
 
 ### special thanks to
 
-- @grisha765 for writing [manifest](https://github.com/grisha765/my_flatpak_repo/tree/main/io.github.grisha765.Photoshop)
+- @ergolyam for writing [manifest](https://github.com/ergolyam/my_flatpak_repo/tree/io.github.grisha765.Photoshop)
 - https://github.com/LinSoftWin/Photoshop-CC2022-Linux
 
